@@ -1,0 +1,157 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.counselling-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f9f9f9; /* Light background for the page */
+}
+
+.counselling-content {
+    flex: 1; /* Allow the content to grow and take up remaining space */
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Counselling Hero Section */
+.counselling-hero {
+    text-align: center;
+    margin-bottom: 60px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.counselling-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+    animation: slideInDown 1s ease-in-out;
+}
+
+.counselling-hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Counselling Services Section */
+.counselling-services {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.counselling-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #007bff; /* Blue color for the heading */
+    animation: slideInDown 1s ease-in-out;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for the heading */
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counselling-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .counselling-hero p {
+        font-size: 1rem;
+    }
+
+    .counselling-services h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

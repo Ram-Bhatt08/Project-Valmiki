@@ -1,0 +1,140 @@
+/* Career Comparison Page Styles */
+.career-comparison-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.career-comparison-content {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.career-comparison-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.career-comparison-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Career Selectors Styles */
+.career-selectors {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.career-selectors select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.career-selectors select:hover {
+    border-color: #007bff;
+}
+
+.career-selectors select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Comparison Table Styles */
+.comparison-table {
+    margin-top: 20px;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.comparison-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.comparison-table td {
+    background-color: #f9f9f9;
+}
+
+.comparison-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comparison-table li {
+    font-size: 1rem;
+    color: #666;
+    padding: 5px 0;
+}
+
+/* Back Button Styles */
+.career-comparison-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.career-comparison-content button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .career-comparison-content h1 {
+        font-size: 2rem;
+    }
+
+    .career-comparison-content p {
+        font-size: 1rem;
+    }
+
+    .career-selectors {
+        flex-direction: column;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 8px;
+    }
+
+    .comparison-table li {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,45 @@
+/* Career Trends Container */
+.career-trends {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading */
+.career-trends h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+.career-trends p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.trends-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.trends-table th,
+.trends-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.trends-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.trends-table tbody tr:hover {
+    background-color: #f9f9f9;
+}

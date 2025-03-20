@@ -1,0 +1,205 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f9f9f9; /* Light background for the page */
+}
+
+.about-content {
+    flex: 1; /* Allow the content to grow and take up remaining space */
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Who We Are Section */
+.who-we-are {
+    text-align: center;
+    margin-bottom: 80px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.who-we-are h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+    animation: slideInDown 1s ease-in-out;
+}
+
+.who-we-are .subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.who-we-are .description {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Our Mission and Vision Sections */
+.our-mission,
+.our-vision {
+    margin-bottom: 80px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.our-mission .content,
+.our-vision .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.our-mission .text,
+.our-vision .text {
+    flex: 1;
+}
+
+.our-mission h2,
+.our-vision h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.our-mission p,
+.our-vision p {
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.our-mission .image,
+.our-vision .image {
+    flex: 1;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.our-mission img,
+.our-vision img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.our-mission img:hover,
+.our-vision img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .our-mission .content,
+    .our-vision .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .our-vision .content {
+        flex-direction: column-reverse; /* Image first on mobile */
+    }
+
+    .our-mission img,
+    .our-vision img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .who-we-are h1 {
+        font-size: 2.5rem;
+    }
+
+    .who-we-are .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .who-we-are .description {
+        font-size: 1rem;
+    }
+
+    .our-mission h2,
+    .our-vision h2 {
+        font-size: 2rem;
+    }
+
+    .our-mission p,
+    .our-vision p {
+        font-size: 1rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

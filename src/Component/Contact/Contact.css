@@ -1,0 +1,126 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the page takes up at least the full viewport height */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f9f9f9; /* Light background for the page */
+}
+
+.contact-content {
+    flex: 1; /* Allow the content to grow and take up remaining space */
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Contact Options */
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for the heading */
+}
+
+.contact-card p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Additional Links */
+.additional-links {
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.additional-links h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for the heading */
+}
+
+.additional-links p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

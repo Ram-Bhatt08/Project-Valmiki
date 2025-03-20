@@ -1,0 +1,137 @@
+/* Salary Calculator Page Styles */
+.salary-calculator-page {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salary-calculator-content {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.salary-calculator-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.salary-calculator-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Input Fields Styles */
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-fields label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-fields select,
+.input-fields input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.input-fields select:hover,
+.input-fields input:hover {
+    border-color: #007bff;
+}
+
+.input-fields select:focus,
+.input-fields input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Calculate Button Styles */
+.salary-calculator-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.salary-calculator-content button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Salary Result Styles */
+.salary-result {
+    margin-top: 20px;
+}
+
+.salary-result h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.salary-result p {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .salary-calculator-content h1 {
+        font-size: 2rem;
+    }
+
+    .salary-calculator-content p {
+        font-size: 1rem;
+    }
+
+    .input-fields label {
+        font-size: 0.9rem;
+    }
+
+    .input-fields select,
+    .input-fields input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .salary-result h3 {
+        font-size: 1.2rem;
+    }
+
+    .salary-result p {
+        font-size: 1rem;
+    }
+}
