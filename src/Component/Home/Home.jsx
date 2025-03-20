@@ -14,7 +14,10 @@ function Home() {
             <div className="hero-section">
     <div className='left'>
         <h1>Welcome to Project Valmiki.</h1>
-        <p>Your one-stop solution for counselling, guidance, and support.</p>
+        <p>We are building a digital solution—a website that helps students choose 
+        their careers wisely and provides counseling, much like how Rishi Valmiki 
+        transformed his
+             path with guidance, showing that the right direction can change lives.</p>
         <button onClick={() => alert('Explore more!')}>Explore More</button>
     </div>
     <div className='right'>
